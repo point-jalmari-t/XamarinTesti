@@ -31,6 +31,8 @@ namespace XamarinTesti
             else if (arvaus == oikeaLuku)
             {
                 arvauksenTulosLabel.Text = "oikein";
+                Random rnd = new Random();
+                oikeaLuku = rnd.Next(1, 11);
             }
         }
     }
