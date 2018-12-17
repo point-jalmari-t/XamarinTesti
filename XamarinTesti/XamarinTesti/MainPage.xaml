@@ -2,14 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinTesti"
-             x:Class="XamarinTesti.MainPage">
+             x:Class="XamarinTesti.MainPage"
+			  BackgroundColor="Black">
 
-    <StackLayout>
+	<StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Mein Lieben" 
-			HorizontalOptions="Center"
-			VerticalOptions="CenterAndExpand"
-			TextColor="HotPink"/>
-    </StackLayout>
+		<Label	Text="Mein Lieben" 
+				HorizontalOptions="Center"
+				TextColor="Black"
+				BackgroundColor="White"/>
+
+		<Label	x:Name="arvauksenTulosLabel"
+				HorizontalOptions="Center"
+				Text=""
+				BackgroundColor="White"/>
+
+		<Entry	x:Name="syötekenttä"
+				Keyboard="Keyboard.Numeric"
+				Text=""
+				BackgroundColor="White"/>
+
+		<Button Clicked="GoNappi_clicked"
+				Text="Go"
+				HorizontalOptions="Center"/>
+
+		<Label	Text="Version 0.2" 
+				HorizontalOptions="Center"
+				TextColor="Gray"/>
+
+	</StackLayout>
 
 </ContentPage>
